@@ -241,3 +241,11 @@ main {
   border-radius: 10px;
   align-self: center;
 }
+
+footer {
+  background-color: #6e48b7;
+  justify-content: center;
+  padding: 20px 10px;
+  display: flex;
+  width: 100%;
+}
