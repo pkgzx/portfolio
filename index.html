@@ -1,316 +1,36 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" href="index.css" />
-    <title>cos4h dev</title>
-    <link rel="canonical" href="https://cos4h.github.io/portfolio/" />
-    <meta name="description" content="cos4h FullStack developer" />
-    <meta charset="utf-8" />
-    <meta name="author" content="Olvadis Hernandez" />
-    <meta name="robots" content="follow" />
-    <link rel="icon" type="image/gif" href="./public/images/cos4h3d.gif" />
-  </head>
-  <body>
-    <header class="navegation-container">
-      <nav class="navegation">
-        <a href="#">Home</a>
-        <a href="#about">About Me</a>
-        <a href="#tecnologies">Tecnologies</a>
-        <a href="#projects">Projects</a>
-        <a href="#">Contact</a>
-      </nav>
-    </header>
-    <main style="display: flex; flex-direction: column">
-      <div class="banner" style="display: flex">
-        <section class="bannerInfo">
-          <h1>Hi, I am <strong>cos4θ</strong></h1>
-          <h1><strong>Software dev</strong></h1>
-          <p class="short-description">
-            Empowering digital landscapes with a dynamic integration of Spring
-            Framework, React, Node and versatile SQL/NoSQL databases.
-          </p>
-          <div style="display: flex; width: 100%; margin-top: 30px">
-            <a
-              href="https://github.com/cos4h"
-              style="margin-right: 10px"
-              target="_blank"
-              class="pildore"
-              ><img src="./public/images/github--v1.png" alt="github icon"
-            /></a>
-            <a
-              target="_blank"
-              style="margin-right: 10px"
-              href="https://www.linkedin.com/in/olvez/"
-              ><img src="./public/images/linkedin--v2.png" alt="linkedin icon"
-            /></a>
-            <a
-              target="_blank"
-              style="margin-right: 10px"
-              href="https://stackoverflow.com/users/21384240/olvadis-hernandez-ledesma"
-            >
-              <img
-                src="./public/images/external-stack-overflow-is-a-question-and-answer-site-for-professional-logo-color-tal-revivo.png"
-                alt="stackoverflow icon"
-              />
-            </a>
-            <a
-              target="_blank"
-              style="margin-right: 10px"
-              href="mailto:olvadis2004@gmail.com"
-            >
-              <img
-                src="./public/images/email.png"
-                alt="email icon"
-                width="40"
-              />
-            </a>
-          </div>
-          <a
-            href="https://drive.google.com/uc?export=download&id=1C8WCl4M0xws8ZThdUo2GWyazZ-v2T_M_"
-            download="cv.pdf"
-            ><button>Resume</button></a
-          >
-        </section>
-        <div class="polar">
-          <img
-            src="./public/images/cos4h3d.gif"
-            width="350"
-            alt="r=cos4θ polar function"
-          />
-          <p style="font-size: 20px">r=cos4θ</p>
-        </div>
-      </div>
-      <section class="about" id="about">
-        <article
-          style="display: flex; flex-direction: column; padding-right: 50px"
-        >
-          <h3 style="margin-bottom: 50px">About Me</h3>
-          <p>
-            My name is <em>Olvadis Hernandez</em>, a self-taught web developer
-            with a passion for the intricate behavior of equations, hence my
-            alias, cos4θ. I embarked on my programming journey at the age of 16,
-            continually learning and strengthening my web development skills. My
-            trajectory has been filled with successes and challenges, from my
-            early days exploring robotics to delving into basic data science and
-            a myriad of technologies.
-          </p>
-
-          <p>
-            Currently, my focus is on web development, a powerful tool for
-            connecting humanity. I find joy in programming, mathematics,
-            robotics, and delving into literature related to the human sciences.
-          </p>
-        </article>
-
-        <img
-          src="./public/images/perfile.jpeg"
-          loading="lazy"
-          alt="cartoon photo of cos4θ"
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/png" href="public/favicon.png" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script>
+            WebFont.load({
+                google: {
+                    families: ['Inter:400,500,600,700,800,900']
+                }
+            })
+        </script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ghost Rider Dev</title>
+        <meta
+            name="description"
+            content="Ghost Rider Dev is a software developer who specializes in creating elegant and captivating digital experiences on the web"
         />
-      </section>
-      <section id="tecnologies">
-        <h3>Tecnologies</h3>
-        <p>
-          Leveraging cutting-edge tools, I have the ability to create
-          high-performance applications and websites. While there are many other
-          technologies that I also use in my day-to-day work, here are some of
-          the key ones that often take the spotlight in my projects.
-        </p>
-
-        <div class="grid-container">
-          <div class="card">
-            <img
-              src="./public/images/spring-3.svg"
-              alt="Logo spring"
-              width="40px"
-              loading="lazy"
-            />
-            <p>Spring Framework</p>
-          </div>
-          <div class="card">
-            <img
-              src="./public/images/react-original-wordmark.svg"
-              alt="Logo react"
-              width="40px"
-              loading="lazy"
-            />
-            <p>React</p>
-          </div>
-          <div class="card">
-            <img
-              src="./public/images/nodejs-original-wordmark.svg"
-              alt="Logo nodejs"
-              width="40px"
-              loading="lazy"
-            />
-            <p>NodeJS</p>
-          </div>
-          <div class="card">
-            <img
-              src="./public/images/mysql-plain.svg"
-              alt="Logo mysql"
-              width="40px"
-              loading="lazy"
-            />
-            <p>MySQL</p>
-          </div>
-          <div class="card">
-            <img
-              src="./public/images/mongodb-plain.svg"
-              alt="Logo Mongo DB"
-              width="40px"
-              loading="lazy"
-            />
-            <p>Mongo DB</p>
-          </div>
-          <div class="card">
-            <img
-              src="./public/images/postgresql_elephant.svg.png"
-              alt="Logo PostgreSQL"
-              width="40px"
-              loading="lazy"
-            />
-            <p>PostgreSQL</p>
-          </div>
-          <div class="card">
-            <img
-              src="./public/images/html5-original.svg"
-              alt="Logo HTML"
-              width="40px"
-              loading="lazy"
-            />
-            <p>HTML</p>
-          </div>
-          <div class="card">
-            <img
-              src="./public/images/css3-plain.svg"
-              alt="Logo CSS"
-              width="40px"
-              loading="lazy"
-            />
-            <p>CSS</p>
-          </div>
-
-          <div class="card">
-            <img
-              src="./public/images/docker-Symbol.png"
-              alt="Logo Docker"
-              width="40px"
-              loading="lazy"
-            />
-            <p>Docker</p>
-          </div>
-          <div class="card">
-            <img
-              src="./public/images/redux-original.svg"
-              alt="Logo Redux"
-              width="40px"
-              loading="lazy"
-            />
-            <p>Redux</p>
-          </div>
-
-          <div class="card">
-            <img
-              src="./public/images/git-plain.svg"
-              alt="Logo Git"
-              width="40px"
-              loading="lazy"
-            />
-            <p>Git</p>
-          </div>
-        </div>
-      </section>
-      <section id="projects">
-        <h3>Projects</h3>
-        <article>
-          <div class="project">
-            <h4>Banalytics.</h4>
-            <p>
-              Productivity prediction dashboard for BANAEXPORT, a banana
-              producer. I learned to use Power BI, Python, multiple regression
-              with time series, and its libraries SciPy and deepLearning.
-            </p>
-            <img
-              class="unplash"
-              src="./public/images/banalytics.png"
-              alt="Banalytics Photo"
-            />
-            <a
-              target="_blank"
-              href="https://app.powerbi.com/view?r=eyJrIjoiYTUyYzNjMDMtODhkZS00ZTYwLTg3NDAtYmY3NGI4ZTk4ZDI0IiwidCI6IjU3N2ZjMWQ4LTA5MjItNDU4ZS04N2JmLWVjNGY0NTVlYjYwMCIsImMiOjR9"
-              class="pildora"
-            >
-              <img src="./public/images/web.svg" width="20px" alt="Web Logo" />
-              <p>Go to demo</p>
-            </a>
-          </div>
-          <div class="project">
-            <h4>Hardmin.</h4>
-            <p>
-              Inventory management system for the company administrators.
-              Implemented CRUD operations for Hardware, Hardware Type,
-              Production, and Geographical Region, pagination, search, PDF and
-              Excel reports. Future plans include production graphics,
-              filtering, authentication, and authorization.
-            </p>
-            <img
-              class="unplash"
-              src="./public/images/hardware.png"
-              alt="Hardmin Photo"
-            />
-          </div>
-          <div class="project">
-            <h4>DevCode</h4>
-            <p>
-              IDE for writing, opening, compiling, and executing code, built in
-              Java with the JavaFX library.
-            </p>
-            <img
-              class="unplash"
-              src="./public/images/devcode.png"
-              alt="DevCode Photo"
-            />
-            <a
-              href="https://github.com/cos4h/DevCode_App"
-              class="pildora"
-              target="_blank"
-            >
-              <img
-                src="./public/images/github--v1.png"
-                width="20px"
-                alt="GitHub Logo"
-              />
-              <p>View source code</p>
-            </a>
-          </div>
-          <div class="project">
-            <h4>Power Training</h4>
-            <p>
-              Web application for personalized training, where the user can
-              register, log in, view their profile, modify it, view workouts,
-              modify them, delete them, subscriptions, plan management,
-              payments, etc.
-            </p>
-            <img
-              class="unplash"
-              src="./public/images/powerTraining.png"
-              alt="Hardmin Photo"
-            />
-            <a
-              target="_blank"
-              href="https://pf-henry-front-rouge.vercel.app/"
-              class="pildora"
-            >
-              <img src="./public/images/web.svg" width="20px" alt="Web Logo" />
-              <p>Go to demo</p>
-            </a>
-          </div>
-        </article>
-      </section>
-    </main>
-    <footer>
-      <header>© All rights reserved</header>
-    </footer>
-  </body>
+        <meta property="og:title" content="Ghost Rider Dev Linkedin" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.linkedin.com/in/olvez/" />
+        <meta property="og:image" content="https://img.freepik.com/vector-premium/logo-linkedin_578229-227.jpg" />
+        <meta
+            property="og:description"
+            content="Ghost Rider Dev is a software developer who specializes in creating elegant and captivating digital experiences on the web"
+        />
+        <meta property="og:site_name" content="Ghost Rider Dev Linkedin" />
+    </head>
+    <body>
+        <div id="root"></div>
+        <script type="module" src="/src/main.tsx"></script>
+    </body>
 </html>
