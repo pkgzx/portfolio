@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState, useContext } from 'react'
-import { animated, config, useSprings, useSpring } from '@react-spring/web'
-import { IoSunny, IoMoon } from 'react-icons/io5'
+import { animated, config, useSpring } from '@react-spring/web'
 import { IoIosArrowUp, IoIosArrowDown } from 'react-icons/io'
 
 import { AppContext } from '@/src/context/appContext'
@@ -25,11 +24,8 @@ const navTab = [
     { name: 'Contacto', top: testimonialsSectionTop }
 ]
 
-const timeSymbols = [<IoSunny size={20} />, <IoMoon size={18} />]
-
 export function ControlPanel() {
     const htmlContainerRef = useRef<HTMLDivElement>(null)
-    const [timeSymbolIndex] = useState<number>(0)
     const [isPanelExpanded, setIsPanelExpanded] = useState<boolean>(window.innerWidth > 768)
     const { isLightMode, handleSetBrightness } = useContext(AppContext)
 
@@ -56,15 +52,6 @@ export function ControlPanel() {
             window.removeEventListener('resize', handleSetPanelCollapsedTop)
         }
     }, [isPanelExpanded])
-
-    const [timeSymbolSpring] = useSprings(
-        1,
-        () => ({
-            transform: `translateY(-${timeSymbolIndex * 26}px)`,
-            config: config.stiff
-        }),
-        [timeSymbolIndex]
-    )
 
     const htmlSpring = useSpring({
         transform: isPanelExpanded

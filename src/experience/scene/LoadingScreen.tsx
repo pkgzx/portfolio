@@ -1,4 +1,4 @@
-import { useContext, useEffect, useMemo, useRef } from 'react'
+import { useContext, useMemo, useRef } from 'react'
 import { FaAngleDown } from 'react-icons/fa6'
 import { LuMouse } from 'react-icons/lu'
 
@@ -7,9 +7,7 @@ import * as THREE from 'three'
 import { AppContext } from '@/src/context/appContext'
 
 import type { LottieRefCurrentProps } from 'lottie-react'
-import Firebg from '@/src/shaders/firebg/Firebg'
 import { SmokeScene } from 'react-smoke'
-import { div } from 'three/examples/jsm/nodes/Nodes.js'
 
 export function LoadingScreen() {
     const { isLoading, isStarted, setIsStarted } = useContext(AppContext)
@@ -64,9 +62,9 @@ export function LoadingScreen() {
                             className='absolute flex h-full w-full flex-col items-center justify-center overflow-y-hidden text-[#ffffff] hover:cursor-pointer'
                             onClick={handleClickStartExperience}
                         >
-                            <div className='flex items-center flex-col-reverse md:justify-center md:flex-row gap-20 md:w-full'>
+                            <div className='flex flex-col-reverse items-center gap-20 md:w-full md:flex-row md:justify-center'>
                                 <img src='rider.gif' alt='Logo' className='ease-in md:mb-40' />
-                                <h1 className='md:mx-20 w-96 text-6xl md:text-8xl font-extrabold absolute sm:top-0 sm:mt-20 md:relative md:mb-20'>
+                                <h1 className='absolute w-96 text-6xl font-extrabold sm:top-0 sm:mt-20 md:relative md:mx-20 md:mb-20 md:text-8xl'>
                                     Bienvenido a Ghost Rider <span className='text-accent'>portfolio</span>
                                 </h1>
                             </div>
